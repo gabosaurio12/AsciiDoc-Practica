@@ -19,7 +19,7 @@ jobs:
       - run: gem install asciidoctor asciidoctor-pdf
       # HTML
       - run: mkdir -p build
-      - run: asciidoctor -D build /docs/index.adoc
+      - run: asciidoctor -D build docs/index.adoc
       # PDF
       - run: asciidoctor-pdf -o build/index.pdf docs/index.adoc
       # Copiar recursos estáticos (imágenes exportadas desde EA)
